@@ -7,9 +7,13 @@ contract Counter{
     function incrementorCounter() public {
             count += 1;
         }
-        
+
     function decrementCounter() public {
         count -= 1;
+    }
+
+    function getCount() public view returns(uint) {
+        return count;
     }
 }
 
